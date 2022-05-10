@@ -5,7 +5,7 @@ from pytest_html_reporter import attach
 
 @pytest.fixture(scope="session")
 def driver():
-    driver = webdriver.Firefox(executable_path=r'C:\\Users\\fccdp\\PycharmProjects\\seleniumTest\\drivers\\geckodriver.exe')
+    driver = webdriver.Firefox()
     driver.set_page_load_timeout(15)
     yield driver
     driver.quit()
